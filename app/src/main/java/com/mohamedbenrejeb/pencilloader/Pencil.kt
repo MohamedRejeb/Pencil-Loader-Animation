@@ -27,7 +27,7 @@ fun Pencil(
         }
         drawPath(
             path = trianglePath,
-            color = Color.Black,
+            color = Color(0xff192c55),
         )
 
         // The Pencil Upper Wood Will take 1/10 of the height and will start from height 1/10 of the height
@@ -40,13 +40,13 @@ fun Pencil(
         }
         drawPath(
             path = pencilUpperWoodPath,
-            color = Color.Yellow
+            color = Color(0xffffd526)
         )
 
         // The Pencil Body Rect Will take 7/10 of the height and will start from height 2/10 of the height
         // So now we used 9/10 of the total height
         drawRect(
-            color = Color.Blue,
+            color = Color(0xff116dff),
             topLeft = Offset((size.width / 2) - pencilWidth / 2f, size.height * (2f / 10f)),
             size = Size(pencilWidth, size.height * (7f / 10f))
         )
@@ -54,7 +54,7 @@ fun Pencil(
         // The Pencil Tail Rect Will take 1/10 of the height and will start from height 9/10 of the height
         // So now we used 10/10 of the total height
         drawRect(
-            color = Color.Green,
+            color = Color(0xff28bf9b),
             topLeft = Offset((size.width / 2) - pencilWidth / 2f, size.height * (9f / 10f)),
             size = Size(pencilWidth, size.height * (1f / 10f))
         )
