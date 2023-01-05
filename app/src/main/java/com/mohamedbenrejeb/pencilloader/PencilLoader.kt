@@ -75,8 +75,6 @@ fun PencilLoader(
                 }
                 .fillMaxSize()
         )
-
-        Text(text = pencilRotationProgress.value.toString())
     }
 
 }

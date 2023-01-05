@@ -1,6 +1,7 @@
 package com.mohamedbenrejeb.pencilloader
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -67,5 +68,6 @@ fun PencilPreview() {
     Pencil(
         modifier = Modifier
             .size(200.dp)
+            .background(Color.White)
     )
 }
