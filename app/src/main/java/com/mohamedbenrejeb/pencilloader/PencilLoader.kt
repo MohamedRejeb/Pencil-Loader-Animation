@@ -6,34 +6,35 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 @Composable
 fun PencilLoader(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    strokeWidth: Dp
 ) {
 
     val pencilRotationProgress = remember {
         Animatable(initialValue = 0f)
     }
 
-    val circleProgress = if (pencilRotationProgress.value < 1f) {
-        pencilRotationProgress.value
-    } else {
-        2f - pencilRotationProgress.value
-    }
+    val circleProgress =
+        if (pencilRotationProgress.value < 1f)
+            pencilRotationProgress.value
+        else
+            2f - pencilRotationProgress.value
 
-    val circleStart = if (pencilRotationProgress.value < 1f) {
-        0f
-    } else {
-        0.5f + (pencilRotationProgress.value - 1f)
-    }
+    val circleStart =
+        if (pencilRotationProgress.value < 1f)
+            0f
+        else
+            0.5f + (pencilRotationProgress.value - 1f)
 
     LaunchedEffect(key1 = pencilRotationProgress) {
         pencilRotationProgress.animateTo(
@@ -64,7 +65,7 @@ fun PencilLoader(
                 .fillMaxSize()
             ,
             progress = circleProgress,
-            strokeWidth = 10.dp,
+            strokeWidth = strokeWidth,
             color = Color(0xff192c55)
         )
 
@@ -86,5 +87,7 @@ fun PencilLoaderPreview() {
         modifier = Modifier
             .size(200.dp)
             .background(Color.White)
+        ,
+        strokeWidth = 10.dp
     )
 }
