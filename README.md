@@ -23,6 +23,7 @@ dependencies {
 
 
 If you are using Kotlin:
+
 Add the dependency below to your module's `build.gradle.kts` file:
 ```kotlin
 dependencies {
