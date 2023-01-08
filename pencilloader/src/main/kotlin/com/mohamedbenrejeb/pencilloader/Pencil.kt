@@ -1,16 +1,12 @@
 package com.mohamedbenrejeb.pencilloader
 
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 
 @Composable
 fun Pencil(
@@ -60,14 +56,4 @@ fun Pencil(
             size = Size(pencilWidth, size.height * (1f / 10f))
         )
     }
-}
-
-@Preview
-@Composable
-fun PencilPreview() {
-    Pencil(
-        modifier = Modifier
-            .size(200.dp)
-            .background(Color.White)
-    )
 }

@@ -1,4 +1,4 @@
-package com.mohamedbenrejeb.pencilloader.ui.theme
+package com.mohamedbenrejeb.pencilloaderdemo.ui.theme
 
 import android.app.Activity
 import android.os.Build

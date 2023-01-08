@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PencilLoader"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.mohamedbenrejeb.pencilloaderdemo.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.PencilLoader">

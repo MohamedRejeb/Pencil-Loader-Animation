@@ -1,16 +1,21 @@
-package com.mohamedbenrejeb.pencilloader
+package com.mohamedbenrejeb.pencilloaderdemo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mohamedbenrejeb.pencilloader.ui.theme.PencilLoaderTheme
+import androidx.compose.ui.unit.dp
+import com.mohamedbenrejeb.pencilloader.PencilLoader
+import com.mohamedbenrejeb.pencilloaderdemo.ui.theme.PencilLoaderTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +27,16 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier.fillMaxSize()
+                    ) {
+                        PencilLoader(
+                            strokeWidth = 14.dp,
+                            modifier = Modifier
+                                .size(300.dp)
+                        )
+                    }
                 }
             }
         }
@@ -38,6 +52,18 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     PencilLoaderTheme {
-        Greeting("Android")
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier.fillMaxSize()
+        ) {
+            PencilLoader(
+                strokeWidth = 14.dp,
+                modifier = Modifier
+                    .size(300.dp)
+            )
+
+            //Pencil(modifier = Modifier.size(300.dp))
+
+        }
     }
 }
