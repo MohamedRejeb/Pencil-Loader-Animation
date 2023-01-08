@@ -12,7 +12,8 @@ https://user-images.githubusercontent.com/41842296/211169448-b76d06a2-f83e-4133-
 
 ## Gradle
 
-Groovy:
+If you are using Groovy:
+
 Add the dependency below to your module's `build.gradle` file:
 ```groovy
 dependencies {
@@ -20,7 +21,8 @@ dependencies {
 }
 ```
 
-Kotlin:
+
+If you are using Kotlin:
 Add the dependency below to your module's `build.gradle.kts` file:
 ```kotlin
 dependencies {
