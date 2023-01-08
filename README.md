@@ -10,7 +10,34 @@ Pencil Loader Animation with jetpack compose, The pencil is drawn with canvas ðŸ
 
 https://user-images.githubusercontent.com/41842296/211169448-b76d06a2-f83e-4133-a536-1db93f6cc84d.mp4
 
+## Gradle
 
+Groovy:
+Add the dependency below to your module's `build.gradle` file:
+```groovy
+dependencies {
+    implementation "io.github.m0coding:pencilloader:1.0.0"
+}
+```
+
+Kotlin:
+Add the dependency below to your module's `build.gradle.kts` file:
+```kotlin
+dependencies {
+    implementation("io.github.m0coding:pencilloader:1.0.0")
+}
+```
+
+## How to Use
+
+You can simply call the **PencilLoader** composable function with fixed size and stroke size:
+```kotlin
+PencilLoader(
+    strokeWidth = 14.dp,
+    modifier = Modifier
+        .size(200.dp)
+)
+```
 
 ## Acknowledgements
 
