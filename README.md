@@ -10,6 +10,8 @@ Pencil Loader Animation with jetpack compose, The pencil is drawn with canvas ðŸ
 
 https://user-images.githubusercontent.com/41842296/211169448-b76d06a2-f83e-4133-a536-1db93f6cc84d.mp4
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.m0coding/pencilloader.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%io.github.m0coding%22%20AND%20a:%22pencilloader%22)
+
 ## Gradle
 
 If you are using Groovy:
