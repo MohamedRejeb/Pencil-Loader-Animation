@@ -14,6 +14,9 @@ https://user-images.githubusercontent.com/41842296/211169448-b76d06a2-f83e-4133-
 
 ## Gradle
 
+You can use this loader in your own projects.
+
+
 If you are using Groovy:
 
 Add the dependency below to your module's `build.gradle` file:
